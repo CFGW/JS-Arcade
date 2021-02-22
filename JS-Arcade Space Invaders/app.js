@@ -111,12 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => squares[currentLaserIndex].classList.remove('laser'), 100)
             }
         }
-
-        // document.addEventListener('keyup', e => {
-        //     if (e.keyCode === 32) {
-        //         laserId = setInterval(moveLaser, 100)
-        //     }
-        // })
+        
         switch(e.keyCode) {
             case 32:
                 laserId = setInterval(moveLaser, 100)

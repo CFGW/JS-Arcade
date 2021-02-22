@@ -78,7 +78,6 @@ body, html {
 
 .pac-man {
     background: conic-gradient(rgba(255,255,0,1) 0% 35%, rgba(0,0,0,0) 35% 60%, rgba(255,255,0,1) 60% 100%);
-    /* background-color: yellow; */
     border-radius: 10px;
     border: none;
     animation: pacman 250ms infinite alternate;

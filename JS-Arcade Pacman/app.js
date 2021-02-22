@@ -216,7 +216,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     function checkForWin() {
         if (document.querySelectorAll('.pac-dot').length === 0) {
-            // if (!squares[i].classList.contains('pac-dot')) {
             ghosts.forEach(ghost => clearInterval(ghost.timerId))
             document.removeEventListener('keyup', movePacman)
             scoreDisplay.innerHTML = 'YOU WIN!'
