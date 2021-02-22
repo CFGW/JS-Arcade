@@ -1,0 +1,96 @@
+.pac-man {
+    transform: rotate(-75deg);
+}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body, html {
+    background: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
+    height: 560px;
+    border: solid black;
+    background: black;
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.pac-dot {
+    background-color: white;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.wall {
+    background-color: blue;
+}
+
+.power-pellet {
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+
+.ghost {
+    border: 0;
+    border-bottom: 2px black dotted;
+    border-radius: 10px 10px 0 0;
+    box-sizing: border-box;
+}
+.blinky {
+    background-color: red;
+}
+.pinky {
+    background-color: pink;
+}
+.inky {
+    background-color: cyan;
+}
+.clyde {
+    background-color: orange;
+}
+
+.scared-ghost {
+    background-color: rgb(28, 28, 190);
+}
+
+
+
+
+.pac-man {
+    background: conic-gradient(rgba(255,255,0,1) 0% 35%, rgba(0,0,0,0) 35% 60%, rgba(255,255,0,1) 60% 100%);
+    /* background-color: yellow; */
+    border-radius: 10px;
+    border: none;
+    animation: pacman 250ms infinite alternate;
+    transform: rotate(-75deg);
+}
+@keyframes pacman {
+    from {
+        background: conic-gradient(rgba(255,255,0,1) 0% 35%, rgba(0,0,0,0) 35% 60%, rgba(255,255,0,1) 60% 100%);
+    }
+    to {
+        background: conic-gradient(rgba(255,255,0,1) 0% 35%, rgba(0,0,0,0) 35% 35%, rgba(255,255,0,1) 35% 100%);
+
+    }
+}
+
